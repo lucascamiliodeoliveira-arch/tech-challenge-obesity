@@ -7,6 +7,11 @@ st.title("Dashboard Analítico - Obesidade")
 
 df = pd.read_csv("data/Obesity.csv")
 
+
+st.write(df.columns.tolist())
+st.stop()
+
+
 st.subheader("Distribuição dos Níveis de Obesidade")
 
 st.bar_chart(
