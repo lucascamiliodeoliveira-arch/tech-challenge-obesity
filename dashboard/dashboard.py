@@ -29,7 +29,7 @@ st.bar_chart(hist)
 st.subheader("Atividade Física Média")
 
 atividade = (
-    df.groupby("NObeyesdad")["FAF"]
+    df.groupby("Obesity")["FAF"]
     .mean()
 )
 
@@ -43,7 +43,7 @@ df["BMI"] = (
 st.subheader("IMC Médio por Classe")
 
 imc = (
-    df.groupby("NObeyesdad")["BMI"]
+    df.groupby("Obesity")["BMI"]
     .mean()
 )
 
