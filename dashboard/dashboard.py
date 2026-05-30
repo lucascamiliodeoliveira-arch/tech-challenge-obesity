@@ -8,7 +8,7 @@ st.title("Dashboard Analítico - Obesidade")
 df = pd.read_csv("data/Obesity.csv")
 
 
-st.write(df.columns.tolist())
+st.write(df.head())
 st.stop()
 
 
