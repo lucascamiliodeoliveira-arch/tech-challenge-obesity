@@ -11,18 +11,17 @@ df = pd.read_csv("data/Obesity.csv")
 st.write(df.head())
 st.stop()
 
-
 st.subheader("Distribuição dos Níveis de Obesidade")
 
 st.bar_chart(
-    df["NObeyesdad"].value_counts()
+    df["Obesity"].value_counts()
 )
 
 st.subheader("Histórico Familiar x Obesidade")
 
 hist = pd.crosstab(
     df["family_history_with_overweight"],
-    df["NObeyesdad"]
+    df["Obesity"]
 )
 
 st.bar_chart(hist)
